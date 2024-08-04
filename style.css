@@ -68,6 +68,15 @@ p {
   font-family: "Courier New", Courier, monospace;
 }
 
+a {
+  color: #75b1a9;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 1px solid #75b1a9;
+}
+
 footer {
   background-color: #acd0c0;
   height: 60px;
