@@ -87,17 +87,34 @@ footer {
 }
 
 .boxes {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   margin: 1rem;
   margin-top: 5rem;
 }
 
+@media (max-width: 1200px) {
+  .boxes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .boxes {
+    grid-template-columns: 1fr;
+  }
+}
+
 .box {
   border: 3px solid #d9b44a;
   padding: 2rem;
-  flex: 1;
   text-align: center;
   color: #75b1a9;
   font-family: "Courier New", Courier, monospace;
