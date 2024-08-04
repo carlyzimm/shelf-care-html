@@ -108,3 +108,45 @@ footer {
   max-height: 200px;
   object-fit: cover;
 }
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+form {
+  width: 100%;
+  max-width: 500px;
+}
+
+label,
+input,
+textarea {
+  width: 100%;
+  max-width: 500px;
+  margin: 0.5rem 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  border: 1px solid #31504f;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  width: auto;
+  background-color: #31504f;
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 0.5rem 1rem;
+}
+
+input[type="submit"]:hover {
+  background-color: #d9b44a;
+}
